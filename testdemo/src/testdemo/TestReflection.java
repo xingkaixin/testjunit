@@ -21,7 +21,7 @@ public class TestReflection {
 
 	public static void test01() throws ClassNotFoundException {
 		Class c1 = TestReflection.class;
-		Class c2 = Class.forName("com.reflection.TestReflection");
+		Class c2 = Class.forName("testdemo.TestReflection");
 		// 获取指定的包名
 		String package01 = c1.getPackage().getName();
 		String package02 = c2.getPackage().getName();
@@ -127,7 +127,7 @@ public class TestReflection {
 	public static void main(String[] args) throws ClassNotFoundException,
 	    SecurityException, IllegalArgumentException, InstantiationException,
 	    IllegalAccessException, NoSuchMethodException, InvocationTargetException {
-		// test01();
-		test02();
+		 test01();
+		//test02();
 	}
 }
